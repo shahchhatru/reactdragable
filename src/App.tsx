@@ -1,9 +1,13 @@
+import {DndContext} from '@dnd-kit/core';
 
+import {Draggable} from './Draggable';
+import {Droppable} from './Droppable';
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <DndContext>
+      <Draggable />
+      <Droppable />
+    </DndContext>
   )
 }
